@@ -63,3 +63,6 @@ syn match Special /\\<longrightarrow>/ conceal cchar=⟶
 syn match Special /\\<forall>/ conceal cchar=∀
 
 highlight link Conceal Operator
+
+" ===== Comments =====
+syn region Comment matchgroup=Comment start="(\*" end="\*)"
