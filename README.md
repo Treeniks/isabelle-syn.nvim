@@ -1,0 +1,1 @@
+# isabelle-syn.nvim
