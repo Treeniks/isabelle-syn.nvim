@@ -4,6 +4,8 @@ syn keyword Keyword imports
 syn keyword Keyword begin
 syn keyword Keyword end
 
+syn keyword Keyword text
+
 syn keyword Keyword lemma
 syn keyword Keyword theorem
 
@@ -16,16 +18,17 @@ syn keyword Keyword thm
 syn keyword Keyword apply
 syn keyword Keyword sorry
 
+syn keyword Label by
+
 syn keyword Repeat assumes and shows
 
-syn keyword Keyword proof
-syn keyword Repeat fix
-syn keyword Repeat assume
-syn keyword Keyword next
-syn keyword Label by
-syn keyword Conditional from have show
+syn keyword Keyword proof next qed
+syn keyword Repeat fix assume
+syn keyword Conditional from have show using
 syn keyword Conditional with then hence thus
-syn keyword Keyword qed
+syn keyword Conditional obtain where
+syn keyword Conditional let case
+syn keyword Constant assms
 
 " ===== Operators =====
 syn match Operator /@/
@@ -68,6 +71,7 @@ syn match Special /\\<longleftrightarrow>/ conceal cchar=⟷
 
 " First Order
 syn match Special /\\<forall>/ conceal cchar=∀
+syn match Special /\\<exists>/ conceal cchar=∃
 
 " Other
 syn match Special /\\<And>/ conceal cchar=⋀
