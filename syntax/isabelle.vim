@@ -4,21 +4,40 @@ syn keyword Keyword imports
 syn keyword Keyword begin
 syn keyword Keyword end
 
-syn keyword Keyword text
+syn keyword Statement text
+syn keyword Statement text_raw
+syn keyword Statement section
+syn keyword Statement subsection
 
 syn keyword Keyword lemma
 syn keyword Keyword theorem
+syn keyword Keyword corollary
 
 syn keyword Keyword fun
 syn keyword Keyword inductive
+syn keyword Typedef definition
+syn keyword Typedef abbreviation
+
+syn keyword Keyword declare
+syn keyword Keyword inductive_cases
+syn keyword Keyword code_pred
+syn keyword Keyword consts
+
+syn keyword Typedef notation
+syn keyword Typedef datatype
+syn keyword Typedef type_synonym
 
 syn keyword Keyword value
 syn keyword Keyword thm
+syn keyword Keyword term
+
+syn keyword Keyword values
+syn keyword Keyword lemmas
 
 syn keyword Keyword apply
-syn keyword Keyword sorry
-
+syn keyword Error sorry
 syn keyword Label by
+syn keyword Label done
 
 syn keyword Repeat assumes and shows
 
@@ -27,8 +46,13 @@ syn keyword Repeat fix assume
 syn keyword Conditional from have show using
 syn keyword Conditional with then hence thus
 syn keyword Conditional obtain where
-syn keyword Conditional let case
 syn keyword Constant assms
+
+syn keyword Typedef moreover ultimately
+
+syn keyword Conditional if then else
+syn keyword Conditional let in
+syn keyword Conditional case of
 
 " ===== Operators =====
 syn match Operator /@/
@@ -502,3 +526,4 @@ highlight link Conceal Operator
 
 " ===== Comments =====
 syn region Comment matchgroup=Comment start="(\*" end="\*)"
+
