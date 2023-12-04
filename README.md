@@ -14,3 +14,9 @@ require('lazy').setup({
     'Treeniks/isabelle-syn.nvim',
 })
 ```
+
+## Snippets for Special Symbols
+
+With no further configuration, if you want to write some special symbol you will have to manually write out its entire specifier (e.g. `\<Rightarrow>` for `⇛`). This is not only very slow to do, it's also very annoying, so I recommend you to create snippets for such symbols.
+
+You can take a look at [my dotfiles](https://github.com/Treeniks/dotfiles/blob/master/nvim/nvim/after/plugin/lsp.lua#L103) using [LuaSnip](https://github.com/L3MON4D3/LuaSnip) for an example.

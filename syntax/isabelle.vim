@@ -526,4 +526,3 @@ highlight link Conceal Operator
 
 " ===== Comments =====
 syn region Comment matchgroup=Comment start="(\*" end="\*)"
-
