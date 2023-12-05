@@ -58,14 +58,25 @@ syn keyword Conditional case of
 syn match Operator /@/
 syn match Operator /#/
 syn match Operator /+/
+syn match Operator /*/
 syn match Operator /=/
 syn match Operator /::/
+syn match Operator /\^/
+
+" the next could also be seen as a Delimiter
 syn match Operator /\"/
+syn match Operator /</
+syn match Operator />/
 
 " ===== Delimiters =====
 syn match Delimiter /(/
 syn match Delimiter /)/
+syn match Delimiter /\[/
+syn match Delimiter /\]/
+syn match Delimiter /{/
+syn match Delimiter /}/
 syn match Delimiter /\./
+syn match Delimiter /,/
 syn match Delimiter /;/
 syn match Delimiter /:/
 
@@ -522,7 +533,8 @@ syn match Special /\\<^sub>7/ conceal cchar=₇
 syn match Special /\\<^sub>8/ conceal cchar=₈
 syn match Special /\\<^sub>9/ conceal cchar=₉
 
-highlight link Conceal Operator
+" in case one wants to color conceal characters as Operators
+" highlight! link Conceal Operator
 
 " ===== Comments =====
 syn region Comment matchgroup=Comment start="(\*" end="\*)"
