@@ -35,6 +35,7 @@ syn keyword Keyword values
 syn keyword Keyword lemmas
 
 syn keyword Keyword apply
+syn keyword Keyword unfolding
 syn keyword Error sorry
 syn keyword Label by
 syn keyword Label done
