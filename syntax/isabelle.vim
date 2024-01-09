@@ -8,6 +8,7 @@ syn keyword Statement text
 syn keyword Statement text_raw
 syn keyword Statement section
 syn keyword Statement subsection
+syn keyword Statement paragraph
 
 syn keyword Keyword lemma
 syn keyword Keyword theorem
