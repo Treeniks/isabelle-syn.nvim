@@ -37,6 +37,8 @@ syn keyword Keyword lemmas
 
 syn keyword Keyword apply
 syn keyword Keyword unfolding
+syn keyword Keyword defer
+syn keyword Keyword prefer
 syn keyword Error sorry
 syn keyword Label by
 syn keyword Label done
@@ -64,6 +66,7 @@ syn match Operator /*/
 syn match Operator /=/
 syn match Operator /::/
 syn match Operator /\^/
+syn match Operator /|/
 
 " the next could also be seen as a Delimiter
 syn match Operator /\"/
