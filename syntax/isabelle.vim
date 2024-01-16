@@ -24,7 +24,8 @@ syn keyword Keyword inductive_cases
 syn keyword Keyword code_pred
 syn keyword Keyword consts
 
-syn keyword Typedef notation
+syn keyword Typedef notation no_notation
+syn keyword Typedef bundle unbundle
 syn keyword Typedef datatype
 syn keyword Typedef type_synonym
 
