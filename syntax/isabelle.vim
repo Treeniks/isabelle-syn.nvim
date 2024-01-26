@@ -18,15 +18,20 @@ syn keyword Keyword fun
 syn keyword Keyword inductive
 syn keyword Typedef definition
 syn keyword Typedef abbreviation
+syn keyword Typedef instantiation instance
+syn keyword Typedef interpretation
 
 syn keyword Keyword declare
 syn keyword Keyword inductive_cases
 syn keyword Keyword code_pred
 syn keyword Keyword consts
 
+syn keyword Keyword hide_fact syntax translations
+
 syn keyword Typedef notation no_notation
 syn keyword Typedef bundle unbundle
 syn keyword Typedef datatype
+syn keyword Typedef class locale sublocale
 syn keyword Typedef type_synonym
 
 syn keyword Keyword value
@@ -44,13 +49,14 @@ syn keyword Error sorry
 syn keyword Label by
 syn keyword Label done
 
-syn keyword Repeat assumes and shows
+syn keyword Repeat fixes assumes defines shows
+syn keyword Repeat and
 
 syn keyword Keyword proof next qed
 syn keyword Repeat fix assume
 syn keyword Conditional from have show using
 syn keyword Conditional with then hence thus
-syn keyword Conditional obtain where
+syn keyword Conditional obtain where for
 syn keyword Constant assms
 
 syn keyword Typedef moreover ultimately
