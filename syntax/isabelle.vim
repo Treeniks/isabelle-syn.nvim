@@ -13,6 +13,7 @@ syn keyword Statement paragraph
 syn keyword Keyword lemma
 syn keyword Keyword theorem
 syn keyword Keyword corollary
+syn keyword Keyword schematic_goal
 
 syn keyword Keyword fun
 syn keyword Keyword inductive
@@ -30,6 +31,7 @@ syn keyword Keyword hide_fact syntax translations
 
 syn keyword Typedef notation no_notation
 syn keyword Typedef bundle unbundle
+syn keyword Typedef context
 syn keyword Typedef datatype
 syn keyword Typedef class locale sublocale
 syn keyword Typedef type_synonym
@@ -37,6 +39,7 @@ syn keyword Typedef type_synonym
 syn keyword Keyword value
 syn keyword Keyword thm
 syn keyword Keyword term
+syn keyword Keyword print_statement
 
 syn keyword Keyword values
 syn keyword Keyword lemmas
