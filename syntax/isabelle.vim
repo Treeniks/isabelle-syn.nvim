@@ -534,6 +534,8 @@ syn match Special /\\<doc>/ conceal cchar=📓
 syn match Special /\\<action>/ conceal cchar=☛
 
 " Subscripts
+syn match Special /\\<^sub>/ conceal cchar=_
+
 syn match Special /\\<^sub>0/ conceal cchar=₀
 syn match Special /\\<^sub>1/ conceal cchar=₁
 syn match Special /\\<^sub>2/ conceal cchar=₂
@@ -544,6 +546,24 @@ syn match Special /\\<^sub>6/ conceal cchar=₆
 syn match Special /\\<^sub>7/ conceal cchar=₇
 syn match Special /\\<^sub>8/ conceal cchar=₈
 syn match Special /\\<^sub>9/ conceal cchar=₉
+
+syn match Special /\\<^sub>a/ conceal cchar=ₐ
+syn match Special /\\<^sub>e/ conceal cchar=ₑ
+syn match Special /\\<^sub>h/ conceal cchar=ₕ
+syn match Special /\\<^sub>i/ conceal cchar=ᵢ
+syn match Special /\\<^sub>j/ conceal cchar=ⱼ
+syn match Special /\\<^sub>k/ conceal cchar=ₖ
+syn match Special /\\<^sub>l/ conceal cchar=ₗ
+syn match Special /\\<^sub>m/ conceal cchar=ₘ
+syn match Special /\\<^sub>n/ conceal cchar=ₙ
+syn match Special /\\<^sub>o/ conceal cchar=ₒ
+syn match Special /\\<^sub>p/ conceal cchar=ₚ
+syn match Special /\\<^sub>r/ conceal cchar=ᵣ
+syn match Special /\\<^sub>s/ conceal cchar=ₛ
+syn match Special /\\<^sub>t/ conceal cchar=ₜ
+syn match Special /\\<^sub>u/ conceal cchar=ᵤ
+syn match Special /\\<^sub>v/ conceal cchar=ᵥ
+syn match Special /\\<^sub>x/ conceal cchar=ₓ
 
 " in case one wants to color conceal characters as Operators
 " highlight! link Conceal Operator
