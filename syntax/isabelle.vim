@@ -535,6 +535,8 @@ syn match Special /\\<action>/ conceal cchar=☛
 
 " Subscripts
 syn match Special /\\<^sub>/ conceal cchar=_
+syn match Special /\\<^bsub>/ conceal cchar=_
+syn match Special /\\<^esub>/ conceal cchar=_
 
 syn match Special /\\<^sub>0/ conceal cchar=₀
 syn match Special /\\<^sub>1/ conceal cchar=₁
@@ -564,6 +566,84 @@ syn match Special /\\<^sub>t/ conceal cchar=ₜ
 syn match Special /\\<^sub>u/ conceal cchar=ᵤ
 syn match Special /\\<^sub>v/ conceal cchar=ᵥ
 syn match Special /\\<^sub>x/ conceal cchar=ₓ
+
+syn match Special /\\<^sub>+/ conceal cchar=₊
+syn match Special /\\<^sub>-/ conceal cchar=₋
+syn match Special /\\<^sub>=/ conceal cchar=₌
+syn match Special /\\<^sub>(/ conceal cchar=₍
+syn match Special /\\<^sub>)/ conceal cchar=₎
+
+" Superscripts
+syn match Special /\\<^sup>/ conceal cchar=^
+syn match Special /\\<^bsub>/ conceal cchar=^
+syn match Special /\\<^esub>/ conceal cchar=^
+
+syn match Special /\\<^sup>0/ conceal cchar=⁰
+syn match Special /\\<^sup>1/ conceal cchar=¹
+syn match Special /\\<^sup>2/ conceal cchar=²
+syn match Special /\\<^sup>3/ conceal cchar=³
+syn match Special /\\<^sup>4/ conceal cchar=⁴
+syn match Special /\\<^sup>5/ conceal cchar=⁵
+syn match Special /\\<^sup>6/ conceal cchar=⁶
+syn match Special /\\<^sup>7/ conceal cchar=⁷
+syn match Special /\\<^sup>8/ conceal cchar=⁸
+syn match Special /\\<^sup>9/ conceal cchar=⁹
+
+syn match Special /\\<^sup>+/ conceal cchar=⁺
+syn match Special /\\<^sup>-/ conceal cchar=⁻
+syn match Special /\\<^sup>=/ conceal cchar=⁼
+syn match Special /\\<^sup>(/ conceal cchar=⁽
+syn match Special /\\<^sup>)/ conceal cchar=⁾
+
+syn match Special /\\<^sup>a/ conceal cchar=ᵃ
+syn match Special /\\<^sup>b/ conceal cchar=ᵇ
+syn match Special /\\<^sup>c/ conceal cchar=ᶜ
+syn match Special /\\<^sup>d/ conceal cchar=ᵈ
+syn match Special /\\<^sup>e/ conceal cchar=ᵉ
+syn match Special /\\<^sup>f/ conceal cchar=ᶠ
+syn match Special /\\<^sup>g/ conceal cchar=ᵍ
+syn match Special /\\<^sup>h/ conceal cchar=ʰ
+syn match Special /\\<^sup>i/ conceal cchar=ⁱ
+syn match Special /\\<^sup>j/ conceal cchar=ʲ
+syn match Special /\\<^sup>k/ conceal cchar=ᵏ
+syn match Special /\\<^sup>l/ conceal cchar=ˡ
+syn match Special /\\<^sup>m/ conceal cchar=ᵐ
+syn match Special /\\<^sup>n/ conceal cchar=ⁿ
+syn match Special /\\<^sup>o/ conceal cchar=ᵒ
+syn match Special /\\<^sup>p/ conceal cchar=ᵖ
+syn match Special /\\<^sup>q/ conceal cchar=𐞥
+syn match Special /\\<^sup>r/ conceal cchar=ʳ
+syn match Special /\\<^sup>s/ conceal cchar=ˢ
+syn match Special /\\<^sup>t/ conceal cchar=ᵗ
+syn match Special /\\<^sup>u/ conceal cchar=ᵘ
+syn match Special /\\<^sup>v/ conceal cchar=ᵛ
+syn match Special /\\<^sup>w/ conceal cchar=ʷ
+syn match Special /\\<^sup>x/ conceal cchar=ˣ
+syn match Special /\\<^sup>y/ conceal cchar=ʸ
+syn match Special /\\<^sup>z/ conceal cchar=ᶻ
+
+syn match Special /\\<^sup>A/ conceal cchar=ᴬ
+syn match Special /\\<^sup>B/ conceal cchar=ᴮ
+syn match Special /\\<^sup>C/ conceal cchar=ꟲ
+syn match Special /\\<^sup>D/ conceal cchar=ᴰ
+syn match Special /\\<^sup>E/ conceal cchar=ᴱ
+syn match Special /\\<^sup>F/ conceal cchar=ꟳ
+syn match Special /\\<^sup>G/ conceal cchar=ᴳ
+syn match Special /\\<^sup>H/ conceal cchar=ᴴ
+syn match Special /\\<^sup>I/ conceal cchar=ᴵ
+syn match Special /\\<^sup>J/ conceal cchar=ᴶ
+syn match Special /\\<^sup>K/ conceal cchar=ᴷ
+syn match Special /\\<^sup>L/ conceal cchar=ᴸ
+syn match Special /\\<^sup>M/ conceal cchar=ᴹ
+syn match Special /\\<^sup>N/ conceal cchar=ᴺ
+syn match Special /\\<^sup>O/ conceal cchar=ᴼ
+syn match Special /\\<^sup>P/ conceal cchar=ᴾ
+syn match Special /\\<^sup>Q/ conceal cchar=ꟴ
+syn match Special /\\<^sup>R/ conceal cchar=ᴿ
+syn match Special /\\<^sup>T/ conceal cchar=ᵀ
+syn match Special /\\<^sup>U/ conceal cchar=ᵁ
+syn match Special /\\<^sup>V/ conceal cchar=ⱽ
+syn match Special /\\<^sup>W/ conceal cchar=ᵂ
 
 " in case one wants to color conceal characters as Operators
 " highlight! link Conceal Operator
