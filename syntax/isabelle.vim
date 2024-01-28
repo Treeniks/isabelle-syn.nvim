@@ -579,8 +579,8 @@ syn match Special /\\<^sub>)/ conceal cchar=₎
 
 " Superscripts
 syn match Special /\\<^sup>/ conceal cchar=^
-syn match Special /\\<^bsub>/ conceal cchar=^
-syn match Special /\\<^esub>/ conceal cchar=^
+syn match Special /\\<^bsup>/ conceal cchar=^
+syn match Special /\\<^esup>/ conceal cchar=^
 
 syn match Special /\\<^sup>0/ conceal cchar=⁰
 syn match Special /\\<^sup>1/ conceal cchar=¹
