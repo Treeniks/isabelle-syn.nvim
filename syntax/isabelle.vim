@@ -45,6 +45,7 @@ syn keyword Keyword values
 syn keyword Keyword lemmas
 
 syn keyword Keyword apply
+syn keyword Keyword subgoal
 syn keyword Keyword unfolding
 syn keyword Keyword defer
 syn keyword Keyword prefer
