@@ -6,8 +6,7 @@ syn keyword Keyword end
 
 syn keyword Statement text
 syn keyword Statement text_raw
-syn keyword Statement section
-syn keyword Statement subsection
+syn keyword Statement section subsection subsubsection
 syn keyword Statement paragraph
 
 syn keyword Keyword lemma
@@ -21,6 +20,7 @@ syn keyword Typedef definition
 syn keyword Typedef abbreviation
 syn keyword Typedef instantiation instance
 syn keyword Typedef interpretation
+syn keyword Typedef global_interpretation
 
 syn keyword Keyword declare
 syn keyword Keyword inductive_cases
