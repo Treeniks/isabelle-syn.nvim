@@ -16,7 +16,7 @@ syn keyword Keyword schematic_goal
 
 syn keyword Keyword fun
 syn keyword Keyword inductive
-syn keyword Typedef definition
+syn keyword Typedef definition lift_definition
 syn keyword Typedef abbreviation
 syn keyword Typedef instantiation instance
 syn keyword Typedef interpretation
