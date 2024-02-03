@@ -60,7 +60,7 @@ syn keyword Keyword proof next qed
 syn keyword Repeat fix assume
 syn keyword Conditional from have show using
 syn keyword Conditional with then hence thus
-syn keyword Conditional obtain where for
+syn keyword Conditional obtain consider where for
 syn keyword Constant assms
 
 syn keyword Typedef moreover ultimately
