@@ -64,6 +64,7 @@ syn keyword Conditional obtain consider where for
 syn keyword Constant assms
 
 syn keyword Typedef moreover ultimately
+syn keyword Typedef also finally
 
 syn keyword Conditional if then else
 syn keyword Conditional let in
