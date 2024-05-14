@@ -1,3 +1,30 @@
+" ===== Operators =====
+syn match Operator /@/
+syn match Operator /#/
+syn match Operator /+/
+syn match Operator /*/
+syn match Operator /=/
+syn match Operator /::/
+syn match Operator /\^/
+syn match Operator /|/
+
+" the next could also be seen as a Delimiter
+syn match Operator /\"/
+syn match Operator /</
+syn match Operator />/
+
+" ===== Delimiters =====
+syn match Delimiter /(/
+syn match Delimiter /)/
+syn match Delimiter /\[/
+syn match Delimiter /\]/
+syn match Delimiter /{/
+syn match Delimiter /}/
+syn match Delimiter /\./
+syn match Delimiter /,/
+syn match Delimiter /;/
+syn match Delimiter /:/
+
 " ===== Conceal Symbols =====
 syn match Special /\\<zero>/ conceal cchar=𝟬
 syn match Special /\\<one>/ conceal cchar=𝟭
