@@ -4,17 +4,16 @@ syn keyword Keyword imports
 syn keyword Keyword begin
 syn keyword Keyword end
 
-syn keyword Statement text
-syn keyword Statement text_raw
+syn keyword Statement text text_raw
 syn keyword Statement section subsection subsubsection
-syn keyword Statement paragraph
+syn keyword Statement chapter paragraph
 
 syn keyword Keyword lemma
 syn keyword Keyword theorem
 syn keyword Keyword corollary
 syn keyword Keyword schematic_goal
 
-syn keyword Keyword fun
+syn keyword Keyword fun primrec function
 syn keyword Keyword inductive
 syn keyword Typedef definition lift_definition
 syn keyword Typedef abbreviation
@@ -29,6 +28,8 @@ syn keyword Keyword consts
 
 syn keyword Keyword hide_fact syntax translations
 
+syn keyword Keyword find_consts find_theorems find_unused_assms
+
 syn keyword Typedef notation no_notation
 syn keyword Typedef bundle unbundle
 syn keyword Typedef context
@@ -39,11 +40,12 @@ syn keyword Typedef type_synonym
 syn keyword Keyword value
 syn keyword Keyword thm
 syn keyword Keyword term
-syn keyword Keyword print_statement
+syn keyword Keyword print_ML_antiquotations print_abbrevs print_antiquotations print_ast_translation print_attributes print_bnfs print_bundles print_case_translations print_cases print_claset print_classes print_codeproc print_codesetup print_coercions print_commands print_context print_context_tracing print_definitions print_defn_rules print_facts print_induct_rules print_inductives print_interps print_locale print_locales print_methods print_options print_orders print_quot_maps print_quotconsts print_quotients print_quotientsQ3 print_quotmapsQ3 print_record print_rules print_simpset print_state print_statement print_syntax print_term_bindings print_theorems print_theory print_trans_rules print_translation
 
 syn keyword Keyword values
 syn keyword Keyword lemmas
 
+syn keyword Keyword try try0 sledgehammer nitpick quickcheck
 syn keyword Keyword apply
 syn keyword Keyword subgoal
 syn keyword Keyword unfolding
@@ -61,6 +63,7 @@ syn keyword Repeat fix assume
 syn keyword Conditional from have show using
 syn keyword Conditional with then hence thus
 syn keyword Conditional obtain consider where for
+syn keyword Conditional infix infixl infixr
 syn keyword Constant assms
 
 syn keyword Typedef moreover ultimately
@@ -76,6 +79,10 @@ syn match Operator /#/
 syn match Operator /+/
 syn match Operator /*/
 syn match Operator /=/
+syn match Operator /==/
+syn match Operator /≡/
+syn match Operator /⊆/
+syn match Operator /⊇/
 syn match Operator /::/
 syn match Operator /\^/
 syn match Operator /|/
@@ -84,6 +91,8 @@ syn match Operator /|/
 syn match Operator /\"/
 syn match Operator /</
 syn match Operator />/
+syn match Operator /≤/
+syn match Operator /≥/
 
 " ===== Delimiters =====
 syn match Delimiter /(/
@@ -96,6 +105,12 @@ syn match Delimiter /\./
 syn match Delimiter /,/
 syn match Delimiter /;/
 syn match Delimiter /:/
+
+syn match Delimiter /!/
+syn match Delimiter /?/
+syn match Delimiter /%/
+syn match Delimiter /\//
+syn match Delimiter /\\/
 
 " ===== Conceal Symbols =====
 syn match Special /\\<zero>/ conceal cchar=𝟬
